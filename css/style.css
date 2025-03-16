@@ -1,87 +1,60 @@
-/* Reset de margens e padding */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Fundo com animação do Spline */
+spline-viewer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1; /* Para ficar atrás do conteúdo */
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
+/* Estilo para o cabeçalho */
 header {
-    background-color: #007BFF; /* Azul claro, pode mudar */
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    text-align: center;
+    z-index: 1; /* Fica na frente do Spline */
 }
 
+/* Logo do cabeçalho */
 header .logo img {
-    width: 120px;
+    width: 150px;
 }
 
+/* Navegação */
 nav ul {
-    list-style-type: none;
-    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 nav ul li {
-    margin: 0 15px;
+    display: inline;
+    margin: 0 10px;
 }
 
 nav ul li a {
-    color: #fff;
+    color: white;
     text-decoration: none;
     font-weight: bold;
 }
 
-main {
-    padding: 50px 20px;
-}
-
-.intro {
+/* Seções */
+section {
+    margin-top: 100px;
+    color: white;
     text-align: center;
-    margin-bottom: 50px;
+    z-index: 1;
 }
 
-.pricing {
-    margin-bottom: 50px;
-}
-
-.sponsors {
-    display: flex;
-    justify-content: space-around;
-}
-
-.sponsor-logos img {
+.sponsors .sponsor-logos img {
     width: 100px;
-    margin: 0 15px;
+    margin: 10px;
 }
 
 footer {
-    background-color: #222;
-    color: #fff;
     text-align: center;
-    padding: 20px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-/* Estilo de botões */
-button {
-    background-color: #28a745; /* Cor personalizada para botões */
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-button:hover {
-    background-color: #218838; /* Hover do botão */
+    margin-top: 50px;
+    color: white;
 }

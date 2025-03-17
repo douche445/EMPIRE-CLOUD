@@ -17,14 +17,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 2; /* Faz com que a navegação fique acima do Spline */
-}
-
-nav .logo a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 35px;
-    font-weight: 600;
+    z-index: 2;
 }
 
 nav ul {
@@ -68,12 +61,12 @@ nav li a:hover {
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 1; /* Fundo do Spline */
+    z-index: 1;
 }
 
 .texto {
     position: relative;
-    z-index: 2; /* Texto sobre o Spline */
+    z-index: 2;
     color: #fff;
 }
 

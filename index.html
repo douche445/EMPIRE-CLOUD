@@ -5,13 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EMPIRE CLOUD</title>
     <link rel="stylesheet" href="css/style.css">
-    <!-- Link do Spline -->
-    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.79/build/spline-viewer.js"></script>
 </head>
 <body>
-    <!-- Animação Spline -->
-    <spline-viewer url="https://prod.spline.design/7bV2FUkYlNTo0a3M/scene.splinecode"></spline-viewer>
-
     <header>
         <div class="logo">
             <img src="images/logo.png" alt="Logo EMPIRE CLOUD">
@@ -25,6 +20,23 @@
             </ul>
         </nav>
     </header>
+
+    <!-- Adicionando o Spline e substituindo o conteúdo -->
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.79/build/spline-viewer.js"></script>
+    <spline-viewer url="https://prod.spline.design/T8KJvs4vsmUEjThT/scene.splinecode" style="width: 100%; height: 100vh;"></spline-viewer>
+
+    <!-- Atualizando o conteúdo da animação com as palavras "EMPIRE CLOUD" -->
+    <script>
+        const viewer = document.querySelector('spline-viewer');
+        viewer.addEventListener('load', () => {
+            const scene = viewer.scene;
+            const textElement = scene.getObjectByName('FUTURX'); // Encontre o texto original
+
+            if (textElement) {
+                textElement.text = 'EMPIRE CLOUD'; // Substitua o texto por "EMPIRE CLOUD"
+            }
+        });
+    </script>
 
     <main>
         <section class="intro">

@@ -21,27 +21,15 @@
         </nav>
     </header>
 
-    <!-- Adicionando o Spline e substituindo o conteúdo -->
-    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.79/build/spline-viewer.js"></script>
-    <spline-viewer url="https://prod.spline.design/T8KJvs4vsmUEjThT/scene.splinecode" style="width: 100%; height: 100vh;"></spline-viewer>
-
-    <!-- Atualizando o conteúdo da animação com as palavras "EMPIRE CLOUD" -->
-    <script>
-        const viewer = document.querySelector('spline-viewer');
-        viewer.addEventListener('load', () => {
-            const scene = viewer.scene;
-            const textElement = scene.getObjectByName('FUTURX'); // Encontre o texto original
-
-            if (textElement) {
-                textElement.text = 'EMPIRE CLOUD'; // Substitua o texto por "EMPIRE CLOUD"
-            }
-        });
-    </script>
-
     <main>
         <section class="intro">
             <h1>Bem-vindo ao EMPIRE CLOUD</h1>
             <p>Gerencie suas máquinas virtuais de forma fácil e eficiente.</p>
+        </section>
+        
+        <section class="spline-animation">
+            <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.79/build/spline-viewer.js"></script>
+            <spline-viewer url="https://prod.spline.design/smWSB89-gsAsdsFQ/scene.splinecode"></spline-viewer>
         </section>
         
         <section class="pricing">

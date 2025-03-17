@@ -2,55 +2,47 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EMPIRE CLOUD</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.79/build/spline-viewer.js"></script>
 </head>
 <body>
-    <header>
+    <!-- Animação com o Spline -->
+    <section id="animation">
+        <spline-viewer url="https://prod.spline.design/RuPRo0fhdUgG-cvs/scene.splinecode"></spline-viewer>
+    </section>
+
+    <!-- Barra de Navegação -->
+    <nav>
         <div class="logo">
-            <img src="images/logo.png" alt="Logo EMPIRE CLOUD">
+            <a href="#">EMPIRE CLOUD</a>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Preços</a></li>
-                <li><a href="#">Modelos</a></li>
-                <li><a href="#">Carrinho</a></li>
-            </ul>
-        </nav>
-    </header>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Preços</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
 
-    <main>
-        <section class="intro">
-            <h1>Bem-vindo ao EMPIRE CLOUD</h1>
-            <p>Gerencie suas máquinas virtuais de forma fácil e eficiente.</p>
-        </section>
-        
-        <section class="spline-animation">
-            <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.79/build/spline-viewer.js"></script>
-            <spline-viewer url="https://prod.spline.design/smWSB89-gsAsdsFQ/scene.splinecode"></spline-viewer>
-        </section>
-        
-        <section class="pricing">
-            <h2>Modelos e Preços</h2>
-            <!-- Aqui você pode listar os diferentes planos -->
-        </section>
-        
-        <section class="sponsors">
-            <h3>Patrocinadores</h3>
-            <div class="sponsor-logos">
-                <img src="images/nvidia-logo.png" alt="NVIDIA">
-                <img src="images/discord-logo.png" alt="Discord">
-                <!-- Adicione mais logos conforme necessário -->
+    <!-- Banner -->
+    <section class="banner">
+        <div class="texto">
+            <h1 class="titulo">Gerencie Suas Máquinas Virtuais</h1>
+            <h2 class="sub_titulo">Com EMPIRE CLOUD, tudo é possível</h2>
+            <div class="botoes">
+                <button class="n-overlay">Saiba Mais</button>
+                <button class="overlay">Inscrever-se</button>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
+    <!-- Rodapé -->
     <footer>
-        <p>&copy; 2025 EMPIRE CLOUD</p>
+        <p>&copy; 2025 EMPIRE CLOUD - Todos os direitos reservados | Endereço: Los Angeles, CA</p>
     </footer>
-
-    <script src="js/script.js"></script>
 </body>
 </html>
